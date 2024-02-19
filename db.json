@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "id": "2",
-      "task": "Second Todo",
-      "completed": true
-    },
-    {
       "id": "f241",
       "task": "Batman",
       "completed": false
@@ -18,7 +13,7 @@
     {
       "id": "186e",
       "task": "Sukuna",
-      "completed": false
+      "completed": true
     },
     {
       "id": "3c71",
@@ -26,7 +21,7 @@
       "completed": true
     },
     {
-      "id": "4fb8",
+      "id": "9f50",
       "task": "Vegeta",
       "completed": false
     }
