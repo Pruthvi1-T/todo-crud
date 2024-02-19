@@ -3,12 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Todo } from './todo';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ServiceService {
-  
-  baseUrl = "http://localhost:3000";
-  constructor(private http: HttpClient) { }
+  baseUrl = 'http://localhost:3000';
+  constructor(private http: HttpClient) {}
 
   getTodoList() {
     return this.http.get<Todo[]>(`${this.baseUrl}/todos`);
@@ -20,8 +19,8 @@ export class ServiceService {
 
   updateTodo(postData: Todo) {
     console.log(postData);
-    
-    return this.http.patch(`${this.baseUrl}/todos/:${postData.id}`, postData);
+
+    return this.http.put(`${this.baseUrl}/todos/${postData.id}`, postData);
   }
 
   deleteTodo(id: Todo['id']) {
